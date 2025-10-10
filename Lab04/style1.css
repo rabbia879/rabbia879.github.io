@@ -1,0 +1,122 @@
+body{
+    background-color:rgb(248, 222, 185);
+     font-family: Calibri, Arial, sans-serif;
+     line-height: 1.6;
+}
+.myclass{
+   color: rgb(25, 17, 188);
+
+    font-size: 25px;  
+}
+
+p{
+    color:rgb(58, 51, 97);
+     overflow: auto;
+    font-size: 15px;
+}
+ul{
+    font-size: 15px;
+    color:dark rgb(40, 40, 65)
+}
+img{
+   background-color:aqua;
+    width:200px;
+    height: 200px;
+
+}
+.scroll-text {
+  width: 400px;         
+  height: 150px;        
+  overflow: auto;       
+  border: 1px solid gray; 
+  padding: 10px;        
+  background-color: rgb(255, 250, 240);
+}
+
+
+h1{
+    color:dark rgb(184, 229, 220);
+
+    font-size: 25px;
+     overflow: auto;
+}
+H2{
+    color:dark rgb(159, 211, 211);
+    font-size: 20px;
+}
+h2 {
+    color: teal;
+}
+
+.myclass {
+    color: rgb(25, 17, 188);
+}
+
+#special {
+    color: crimson;
+}
+div {
+  border: 2px solid rgb(150, 150, 150);
+  padding: 10px;
+  margin: 15px;
+  display: flow-root;
+}
+
+H3{
+    color:dark rgb(133, 198, 198);
+    font-size: 20px;
+}
+H4{
+    color:dark rgb(152, 225, 229);
+    font-size: 20px;
+}
+p{
+    color:rgb(58, 51, 97);
+    
+    font-size: 15px;
+}
+ul{
+    font-size: 15px;
+    color:dark rgb(40, 40, 65)
+}
+img{
+   background-color:aqua;
+    width:200px;
+    height: 200px;
+
+}
+footer{
+    background-color: blanchedalmond;
+    font-size: 15px;
+    font-display: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+header{
+    background-color: blanchedalmond;
+    font-size: 15px;
+    font-display: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+a.hover{
+    color:red;
+}
+a.visited{
+    color:black;
+}
+p::first-letter{
+    font-size:large;
+    color:rgb(30, 9, 9);
+}
+img {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+img[src$=".jpeg"]{
+    box-shadow: 5px grey;
+}
+a[href^="https"]{
+    color:aquamarine;
+}
