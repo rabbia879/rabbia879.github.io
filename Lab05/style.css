@@ -120,3 +120,29 @@ img[src$=".jpeg"]{
 a[href^="https"]{
     color:aquamarine;
 }
+table {
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fffaf0;
+  box-shadow: 0 0 5px gray;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+th {
+  background-color: blanchedalmond;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
