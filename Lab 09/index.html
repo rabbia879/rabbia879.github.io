@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            display: block;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        img.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lazy Loading Images</h2>
+
+<img src="image 5.jpg" alt="Screenshot 1" class="loaded">
+<img data-src="image 6.jpg" alt="Screenshot 2" class="lazy">
+<img data-src="image 7.jpg" alt="Screenshot 3" class="lazy">
+<img data-src="image 8.jpg" alt="Screenshot 4" class="lazy">
+<img data-src="image 1.jpg" alt="Screenshot 5" class="lazy">
+<img data-src="image 2.jpg" alt="Screenshot 6" class="lazy">
+<img data-src="image 3.jpg" alt="Screenshot 7" class="lazy">
+<img data-src="image 4.jpg" alt="Screenshot 8" class="lazy">
+
+<script>
+function lazyLoad() {
+    const lazyImages = document.querySelectorAll('img.lazy');
+    lazyImages.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        if(rect.top < window.innerHeight) {
+            img.src = img.dataset.src;
+            img.classList.remove('lazy');
+            img.classList.add('loaded');
+        }
+    });
+}
+
+window.addEventListener('scroll', lazyLoad);
+window.addEventListener('load', lazyLoad);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    input, textarea {
+      padding: 5px;
+      margin: 5px 0;
+      width: 250px;
+    }
+    input[type="submit"] {
+      width: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="info">
+    <label>Full Name:</label>
+    <input type="text" id="name" placeholder="bibi rabbia"><br><br>
+
+    <label>Email:</label>
+    <input type="text" id="email" placeholder="rabbiarehman4567@gmail.com"><br><br>
+
+    <label>Phone:</label>
+    <input type="text" placeholder="03456788639"><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender">Female<br><br>
+
+    <label>Skills:</label>
+    <input type="checkbox" checked>HTML
+    <input type="checkbox" checked>CSS
+    <input type="checkbox">JavaScript<br><br>
+
+    <label>Message:</label><br>
+    <textarea rows="4" cols="30" placeholder="excited to learn web"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+var uname = document.querySelector('#name');
+var email = document.querySelector('#email');
+var form  = document.querySelector('#info');
+
+uname.addEventListener('change', function(){
+    if (this.value.length < 5){
+        this.style.background = "red";
+        this.style.color = "white";
+    } else {
+        this.style.background = "white";
+        this.style.color = "black";
+    }
+});
+
+email.addEventListener('change', function(){
+    var pattern = /[^@]+@[^\.]+\..+/;
+    if (!pattern.test(this.value)){
+        this.style.background = "red";
+        this.style.color = "white";
+    } else {
+        this.style.background = "white";
+        this.style.color = "black";
+    }
+});
+
+form.addEventListener('submit', function(e){
+    var pattern = /[^@]+@[^\.]+\..+/;
+    var valid = true;
+
+    if (uname.value.length < 5){
+        uname.style.background = "red";
+        uname.style.color = "white";
+        valid = false;
+    }
+
+    if (!pattern.test(email.value)){
+        email.style.background = "red";
+        email.style.color = "white";
+        valid = false;
+    }
+
+    if (!valid){
+        e.preventDefault();
+    }
+});
+</script>
+
+</body>
+</html>
