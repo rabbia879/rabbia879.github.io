@@ -1,0 +1,48 @@
+{
+  "customers": [
+    {
+      "id": "C001",
+      "name": "Ahmed Khan",
+      "email": "ahmed@example.com",
+      "phone": "+92 300 1234567",
+      "address": "House 123, Street 5, Lahore",
+      "membership": "Gold",
+      "totalSpent": 12500,
+      "joinDate": "2023-01-15",
+      "lastPurchase": "2024-02-10"
+    },
+    {
+      "id": "C002",
+      "name": "Sara Ahmed",
+      "email": "sara@example.com",
+      "phone": "+92 321 9876543",
+      "address": "Apartment 45, Model Town, Karachi",
+      "membership": "Silver",
+      "totalSpent": 8500,
+      "joinDate": "2023-03-22",
+      "lastPurchase": "2024-02-05"
+    },
+    {
+      "id": "C003",
+      "name": "Ali Raza",
+      "email": "ali@example.com",
+      "phone": "+92 333 4567890",
+      "address": "Shop 78, Commercial Area, Islamabad",
+      "membership": "Regular",
+      "totalSpent": 4200,
+      "joinDate": "2023-08-10",
+      "lastPurchase": "2024-01-28"
+    },
+    {
+      "id": "C004",
+      "name": "Anas",
+      "email": "anas@gmail.com",
+      "phone": "+92384347837",
+      "address": "hostel city",
+      "membership": "Regular",
+      "totalSpent": 0,
+      "joinDate": "2025-12-13",
+      "lastPurchase": "2025-12-13"
+    }
+  ]
+}
